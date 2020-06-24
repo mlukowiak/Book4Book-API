@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ads",
+  "info": {
+    "name": "Ad"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "ads"
+    },
+    "book": {
+      "via": "ads",
+      "model": "book"
+    }
+  }
+}
