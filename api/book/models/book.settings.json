@@ -13,7 +13,7 @@
       "type": "string"
     },
     "image": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -22,10 +22,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "ads": {
-      "collection": "ad",
-      "via": "book"
     },
     "author": {
       "type": "string"
@@ -39,6 +35,10 @@
     "types": {
       "collection": "type",
       "via": "book"
+    },
+    "ads": {
+      "via": "book",
+      "collection": "ad"
     }
   }
 }

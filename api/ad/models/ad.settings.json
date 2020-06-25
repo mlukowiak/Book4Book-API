@@ -20,9 +20,29 @@
       "model": "user",
       "via": "ads"
     },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "localization": {
+      "type": "string"
+    },
+    "delivery": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
     "book": {
-      "via": "ads",
-      "model": "book"
+      "model": "book",
+      "via": "ads"
     }
   }
 }

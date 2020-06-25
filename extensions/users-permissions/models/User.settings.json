@@ -56,6 +56,23 @@
     "ads": {
       "via": "user",
       "collection": "ad"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "gaveBooks": {
+      "type": "integer",
+      "default": 0
+    },
+    "adoptedBooks": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
