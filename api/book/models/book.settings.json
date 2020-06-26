@@ -32,13 +32,15 @@
     "series": {
       "type": "string"
     },
-    "types": {
-      "collection": "type",
+    "ads": {
+      "collection": "ad",
       "via": "book"
     },
-    "ads": {
-      "via": "book",
-      "collection": "ad"
+    "publishYear": {
+      "type": "integer"
+    },
+    "types": {
+      "collection": "type"
     }
   }
 }

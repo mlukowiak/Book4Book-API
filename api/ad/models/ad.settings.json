@@ -41,8 +41,8 @@
       "type": "richtext"
     },
     "book": {
-      "model": "book",
-      "via": "ads"
+      "via": "ads",
+      "model": "book"
     }
   }
 }
