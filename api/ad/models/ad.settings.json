@@ -10,10 +10,12 @@
   },
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "date": {
-      "type": "datetime"
+      "type": "datetime",
+      "required": true
     },
     "user": {
       "plugin": "users-permissions",
@@ -24,15 +26,16 @@
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     },
     "localization": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "delivery": {
       "type": "string"
@@ -41,8 +44,12 @@
       "type": "richtext"
     },
     "book": {
-      "via": "ads",
-      "model": "book"
+      "model": "book",
+      "via": "ads"
+    },
+    "distance": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
