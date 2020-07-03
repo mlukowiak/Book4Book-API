@@ -10,37 +10,30 @@
   },
   "attributes": {
     "title": {
-      "type": "string"
-    },
-    "image": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
+      "type": "string",
+      "required": true
     },
     "author": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "publishingHouse": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "series": {
       "type": "string"
     },
-    "ads": {
-      "via": "book",
-      "collection": "ad"
-    },
     "publishYear": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "types": {
       "collection": "type"
+    },
+    "copies": {
+      "via": "book",
+      "collection": "copy"
     }
   }
 }

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transactions",
+  "info": {
+    "name": "Transaction"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "location": {
+      "type": "json"
+    },
+    "startUser": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "finalUser": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "finalDate": {
+      "type": "date",
+      "required": true
+    },
+    "delivery": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -53,10 +53,6 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "ads": {
-      "via": "user",
-      "collection": "ad"
-    },
     "avatar": {
       "model": "file",
       "via": "related",

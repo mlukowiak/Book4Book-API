@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "ads",
+  "collectionName": "copies",
   "info": {
-    "name": "Ad"
+    "name": "Copy"
   },
   "options": {
     "increments": true,
@@ -13,43 +13,41 @@
       "type": "string",
       "required": true
     },
-    "date": {
-      "type": "datetime",
-      "required": true
-    },
-    "user": {
-      "plugin": "users-permissions",
-      "model": "user",
-      "via": "ads"
-    },
     "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
-        "images",
-        "videos"
+        "images"
       ],
       "plugin": "upload",
       "required": true
     },
-    "localization": {
-      "type": "string",
-      "required": true
-    },
-    "delivery": {
-      "type": "string"
-    },
     "description": {
-      "type": "richtext"
+      "type": "text",
+      "required": true
     },
     "book": {
       "model": "book",
-      "via": "ads"
+      "via": "copies"
+    },
+    "status": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     },
     "distance": {
       "type": "integer",
-      "default": 0
+      "default": 0,
+      "required": true,
+      "min": 0
+    },
+    "addDate": {
+      "type": "date",
+      "required": true
+    },
+    "currentUser": {
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

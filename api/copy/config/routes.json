@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/ads",
-      "handler": "ad.find",
+      "path": "/copies",
+      "handler": "copy.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/ads/count",
-      "handler": "ad.count",
+      "path": "/copies/count",
+      "handler": "copy.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/ads/:id",
-      "handler": "ad.findOne",
+      "path": "/copies/:id",
+      "handler": "copy.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/ads",
-      "handler": "ad.create",
+      "path": "/copies",
+      "handler": "copy.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/ads/:id",
-      "handler": "ad.update",
+      "path": "/copies/:id",
+      "handler": "copy.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/ads/:id",
-      "handler": "ad.delete",
+      "path": "/copies/:id",
+      "handler": "copy.delete",
       "config": {
         "policies": []
       }
