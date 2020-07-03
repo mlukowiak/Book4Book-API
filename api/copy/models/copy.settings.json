@@ -42,12 +42,12 @@
       "min": 0
     },
     "addDate": {
-      "type": "date",
+      "type": "datetime",
       "required": true
     },
-    "currentUser": {
-      "plugin": "users-permissions",
-      "model": "user"
+    "transactions": {
+      "collection": "transaction",
+      "via": "copy"
     }
   }
 }

@@ -17,7 +17,7 @@
       "model": "user"
     },
     "startDate": {
-      "type": "date",
+      "type": "datetime",
       "required": true
     },
     "finalUser": {
@@ -25,12 +25,16 @@
       "model": "user"
     },
     "finalDate": {
-      "type": "date",
-      "required": true
+      "type": "datetime",
+      "required": false
     },
     "delivery": {
       "type": "string",
       "required": true
+    },
+    "copy": {
+      "via": "transactions",
+      "model": "copy"
     }
   }
 }
